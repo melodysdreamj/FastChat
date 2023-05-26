@@ -80,6 +80,8 @@ def preprocess(
 ) -> Dict:
     conv = get_conversation_template("vicuna")
     roles = {"human": conv.roles[0], "gpt": conv.roles[1]}
+    print("체크1:", conv.roles[0])
+    print("체크2:", conv.roles[0])
 
     # Apply prompt templates
     conversations = []
